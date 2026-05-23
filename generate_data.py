@@ -2,9 +2,10 @@ import os
 import json
 import random
 import string
+from pathlib import Path
 
-BASE_FOLDER = "/home/zxz/Documents/coding/Sorting_Project"
-DATASETS_FOLDER = os.path.join(BASE_FOLDER, "datasets")
+BASE_FOLDER = Path(__file__).resolve().parents[1]
+DATASETS_FOLDER = BASE_FOLDER / "datasets"
 
 
 def save_data(path, data):
@@ -93,7 +94,19 @@ def random_string_array(n, length=6):
 def main():
     os.makedirs(DATASETS_FOLDER, exist_ok=True)
 
-    sizes = [20, 30, 50, 100, 1000, 5000, 10000]
+    sizes = [
+        20,
+        30,
+        50,
+        100,
+        1000,
+        5000,
+        10000,
+        30000,
+        100000,
+        300000,
+        1000000,
+    ]
 
     for size in sizes:
         save_data(os.path.join(DATASETS_FOLDER, f"random_int_{size}.json"), random_int_array(size))

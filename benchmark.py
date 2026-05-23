@@ -2,6 +2,7 @@ import os
 import json
 import csv
 import time
+from pathlib import Path
 
 from sorting_algorithms import (
     bubble_sort,
@@ -12,10 +13,10 @@ from sorting_algorithms import (
     python_sort
 )
 
-BASE_FOLDER = "/home/zxz/Documents/coding/Sorting_Project"
-DATASETS_FOLDER = os.path.join(BASE_FOLDER, "datasets")
-RESULTS_FOLDER = os.path.join(BASE_FOLDER, "results")
-RESULTS_FILE = os.path.join(RESULTS_FOLDER, "benchmark_results.csv")
+BASE_FOLDER = Path(__file__).resolve().parents[1]
+DATASETS_FOLDER = BASE_FOLDER / "datasets"
+RESULTS_FOLDER = BASE_FOLDER / "results"
+RESULTS_FILE = RESULTS_FOLDER / "benchmark_results.csv"
 
 
 def load_data(path):

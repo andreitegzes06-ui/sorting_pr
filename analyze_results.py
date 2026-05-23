@@ -1,11 +1,11 @@
-import os
 import csv
 from collections import defaultdict
+from pathlib import Path
 
-BASE_FOLDER = "/home/zxz/Documents/coding/Sorting_Project"
-RESULTS_FOLDER = os.path.join(BASE_FOLDER, "results")
-INPUT_FILE = os.path.join(RESULTS_FOLDER, "benchmark_results.csv")
-OUTPUT_FILE = os.path.join(RESULTS_FOLDER, "summary_results.csv")
+BASE_FOLDER = Path(__file__).resolve().parents[1]
+RESULTS_FOLDER = BASE_FOLDER / "results"
+INPUT_FILE = RESULTS_FOLDER / "benchmark_results.csv"
+OUTPUT_FILE = RESULTS_FOLDER / "summary_results.csv"
 
 
 def average(numbers):
