@@ -48,7 +48,7 @@ This matters because sorting performance depends not only on input size, but als
 
 ## Results
 
-### Figure 2: Overall Runtime Comparison
+### Figure 1: Overall Runtime Comparison
 
 ![Overall runtime comparison](graphics/figure_2_overall_runtime_comparison.png)
 
@@ -60,7 +60,7 @@ The more efficient algorithms scale better, especially Quick Sort, Merge Sort, H
 
 Python's built-in sort performs best overall because it is highly optimized.
 
-## Figure 3: Average Runtime by Input Type
+## Figure 2: Average Runtime by Input Type
 
 ![Average runtime by input type](graphics/figure_3_average_runtime_by_input_type.png)
 
@@ -72,7 +72,7 @@ Selection Sort is more stable across input types because it performs a similar n
 
 Python's built-in sort also benefits from already ordered or partially ordered input data.
 
-## Figure 4: Runtime Heatmap
+## Figure 3: Runtime Heatmap
 
 ![Runtime heatmap](graphics/figure_4_average_runtime_heatmap.png)
 
