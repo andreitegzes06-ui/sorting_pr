@@ -189,13 +189,6 @@ Possible improvements include:
 * using more real-world datasets
 * improving the visual design of the graphs
 
-## Paper
-
-This repository is connected to the paper:
-
-**Comparing Sorting Algorithms in Python**
-
-The paper explains the formal sorting problem, the algorithms, the benchmark design, the experimental results, limitations, and future work.
 
 ## Author
 
